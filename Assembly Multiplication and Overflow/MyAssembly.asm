@@ -14,7 +14,7 @@ doit proc
 	mov eax, 8
 	mov ebx, 4
 	; mul eax, ebx	; syntacs error: mul only needs 1 argument
-	mov edx, 21323
+	mov edx, 21323	; edx will fill the overflow
 	mul ebx
 	;mul 4	
 
