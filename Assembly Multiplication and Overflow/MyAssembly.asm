@@ -11,12 +11,16 @@ doit proc
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
 	; 8 * 4 
 
-	mov eax, 8
-	mov ebx, 4
-	; mul eax, ebx	; syntacs error: mul only needs 1 argument
-	mov edx, 21323	; edx will fill the overflow
+	;mov eax, 8	
+	;mov ebx, 4
+	;mov edx, 21323	; edx will fill the overflow	
+	; mul eax, ebx	; syntacs error: mul only needs 1 argument	
+	;mul ebx
+	;mul 4
+	
+	mov eax, 0FFFFFFFFh
+	mov ebx, 0FFFFFFFFh
 	mul ebx
-	;mul 4	
 
 	; the went bought. some I and, food to store	; wrong syntacs, semantics, parsing
 	; I went to the store, and I bought some food. ;correct semantics, parse
