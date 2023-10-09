@@ -6,6 +6,7 @@
 // MyAssembly.asm - (customBuildTool)output - %(Filename).obj
 
 // multiply overflow 1111 * 1111 = 11101001
+// 32bit overflow 1111 1111 1111 1111 1111 1111 1111 1111 * 1111 1111 1111 1111 1111 1111 1111 1111 = overflow
 
 extern "C" void doit();
 
