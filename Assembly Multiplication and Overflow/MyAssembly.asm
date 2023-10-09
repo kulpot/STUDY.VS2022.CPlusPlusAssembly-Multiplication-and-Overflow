@@ -12,9 +12,11 @@ doit proc
 	; 8 * 4 
 
 	mov eax, 8
-	; mov ebx, 4
+	mov ebx, 4
 	; mul eax, ebx	; syntacs error: mul only needs 1 argument
-	mul 4	; mul ebx
+	mov edx, 21323
+	mul ebx
+	;mul 4	
 
 	; the went bought. some I and, food to store	; wrong syntacs, semantics, parsing
 	; I went to the store, and I bought some food. ;correct semantics, parse
